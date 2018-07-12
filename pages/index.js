@@ -23,7 +23,7 @@ const Container = styled.div`
 `;
 
 export default () => (
-  <Layout title="Contact us">
+  <Layout title="Welcome">
     <Container>
       <Particles
         params={{
