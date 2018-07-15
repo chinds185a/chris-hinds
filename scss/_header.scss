@@ -1,0 +1,13 @@
+.header__contact-icon,
+.header__contact-link {
+  color: $primary-color;
+}
+
+.header__contact-link a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header__social-links li:not(:last-child) {
+  margin-right: 22px;
+}
