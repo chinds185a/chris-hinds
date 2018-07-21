@@ -17,7 +17,7 @@ export default () => (
           </p>
         </section>
 
-        <div className="cta-container uk-flex uk-flex-between uk-flex-wrap">
+        <div className="intro-section__cta-container uk-flex uk-flex-wrap">
           <Button href="mailto:chinds@outlook.com" buttonStyle="default">
             more about chris
           </Button>
