@@ -18,10 +18,10 @@ export default () => (
         </section>
 
         <div className="intro-section__cta-container uk-flex uk-flex-wrap">
-          <Button href="mailto:chinds@outlook.com" buttonStyle="default">
+          <Button href="https://www.linkedin.com/in/chrishinds1" buttonStyle="default">
             more about chris
           </Button>
-          <Button href="mailto:chinds@outlook.com" buttonStyle="default">
+          <Button href="#" buttonStyle="default">
             chris's work
           </Button>
         </div>

@@ -1,4 +1,5 @@
 import Icons from "react-fontawesome";
+import IconButton from './elements/icon-button'
 
 export default () => (
   <header>
@@ -14,19 +15,19 @@ export default () => (
       <div className="uk-flex uk-flex-center uk-flex-middle">
         <ul className="header__social-links uk-iconnav">
           <li>
-            <a href="#">
+            <IconButton href="https://twitter.com/chinds185">
               <Icons name="twitter" size="2x" />
-            </a>
+            </IconButton>
           </li>
           <li>
-            <a href="#">
-              <Icons name="github" size="2x" />
-            </a>
+          <IconButton href="https://github.com/chinds185a">
+            <Icons name="github" size="2x" />
+          </IconButton>
           </li>
           <li>
-            <a href="#">
-              <Icons name="linkedin" size="2x" />
-            </a>
+          <IconButton href="https://www.linkedin.com/in/chrishinds1">
+            <Icons name="linkedin" size="2x" />
+          </IconButton>
           </li>
         </ul>
       </div>

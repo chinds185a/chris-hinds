@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default ({ href, children, buttonStyle = "primary" }) => (
+export default ({ href, children, buttonStyle = "primary", type = "cta-button", target = "_blank" }) => (
   <Link href={href} passHref>
-    <a className={`cta-button uk-button uk-button-${buttonStyle}`} type="button">
+    <a className={`${type} uk-button uk-button-${buttonStyle}`} target={target} rel="noopener" type="button">
       {children}
     </a>
   </Link>
