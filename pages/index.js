@@ -5,8 +5,8 @@ import styled from "styled-components";
 import AboutMe from "../components/intro";
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 76px);
   margin: 0;
   padding: 0;
   display: flex;

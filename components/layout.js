@@ -3,7 +3,9 @@ import Link from "next/link";
 import Head from "next/head";
 import Fonts from "./fonts";
 import "../scss/styles.scss";
-import Icons from "react-fontawesome";
+
+// Components
+import Navigation from './navigation.js';
 
 class Index extends React.Component {
   componentDidMount() {
@@ -12,7 +14,7 @@ class Index extends React.Component {
 
   render() {
     return (
-      <div className="uk-container uk-container-large">
+      <div className="layout-wrapper">
         <Head>
           <title>{this.props.title}</title>
           <meta charSet="utf-8" />
@@ -22,39 +24,11 @@ class Index extends React.Component {
           />
         </Head>
 
-        <header>
-          <nav className="uk-flex uk-flex-between uk-margin-medium-top">
-            <div className="uk-flex uk-flex-between uk-flex-center uk-flex-middle">
-              <span className="header__contact-icon uk-margin-small-right">
-                <Icons name="comment" size="2x" />
-              </span>
-              <span className="header__contact-link uk-text-lead uk-text-capitalize">
-                <a href="mailto:chinds@outlook.com">contact me.</a>
-              </span>
-            </div>
-            <div className="uk-flex uk-flex-center uk-flex-middle">
-              <ul className="header__social-links uk-iconnav">
-                <li>
-                  <a href="#">
-                    <Icons name="twitter" size="2x" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <Icons name="github" size="2x" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <Icons name="linkedin" size="2x" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+        <div className="main-content__wrapper uk-container uk-container-large">
+          <Navigation />
 
-        <main>{this.props.children}</main>
+          <main>{this.props.children}</main>
+        </div>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 .header__contact-icon,
-.header__contact-link {
-  color: $primary-color;
+.header__contact-link,
+.header__contact-link a {
+  color: $theme-white;
 }
 
 .header__contact-link a {

@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Button from "../components/elements/button";
 
 export default () => (
-  <div className="uk-dark">
+  <div className="uk-light">
     <div className="uk-flex uk-flex-between">
       <div>
         <section>
@@ -16,12 +16,15 @@ export default () => (
             Currently working at British Broadcasting Corporation (BBC).
           </p>
         </section>
-        <Button href="mailto:chinds@outlook.com" buttonStyle="default">
-          get in touch
-        </Button>
-      </div>
-      <div>
-        <p>dave</p>
+
+        <div className="cta-container uk-flex uk-flex-between uk-flex-wrap">
+          <Button href="mailto:chinds@outlook.com" buttonStyle="default">
+            more about chris
+          </Button>
+          <Button href="mailto:chinds@outlook.com" buttonStyle="default">
+            chris's work
+          </Button>
+        </div>
       </div>
     </div>
   </div>

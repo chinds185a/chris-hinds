@@ -17,3 +17,13 @@ h6 {
   color: $primary-color;
   font-weight: bold;
 }
+
+.layout-wrapper {
+  background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.8)), url(https://www.cactusweb.gr/wp-content/uploads/2017/06/slide-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+}
