@@ -19,13 +19,16 @@ h6 {
 }
 
 .layout-wrapper {
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.layout-wrapper.background-enabled {
   background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.8)), url(https://www.cactusweb.gr/wp-content/uploads/2017/06/slide-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow-y: hidden;
-  width: 100vw;
-  height: 100vh;
 }
 
 .cta-button {
@@ -37,4 +40,13 @@ h6 {
   .cta-button {
       width: auto;
   }
+}
+
+// background colours
+.background-color-yellow {
+  background-color: $palette-yellow;;
+}
+
+.background-color-blue {
+  background-color: $palette-blue;;
 }

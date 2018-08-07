@@ -1,10 +1,8 @@
-import Layout from "../components/layout";
-
 // Elements
 import Button from "../components/elements/button";
 
 export default () => (
-  <div className="uk-light">
+  <div className="uk-light uk-container uk-container-large">
     <div className="uk-flex uk-flex-between">
       <div>
         <section>
@@ -18,7 +16,7 @@ export default () => (
         </section>
 
         <div className="intro-section__cta-container uk-flex uk-flex-wrap">
-          <Button href="https://www.linkedin.com/in/chrishinds1" buttonStyle="default">
+          <Button href="/aboutme" buttonStyle="default">
             more about chris
           </Button>
           <Button href="#" buttonStyle="default">

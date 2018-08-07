@@ -13,10 +13,11 @@ class Index extends React.Component {
   }
 
   render() {
+    const { title, children, background, hero } = this.props;
     return (
-      <div className="layout-wrapper">
+      <div className={`layout-wrapper ${background ? 'background-enabled' : ''}`}>
         <Head>
-          <title>{this.props.title}</title>
+          <title>{title}</title>
           <meta charSet="utf-8" />
           <meta
             name="viewport"
@@ -24,10 +25,10 @@ class Index extends React.Component {
           />
         </Head>
 
-        <div className="main-content__wrapper uk-container uk-container-large">
-          <Navigation />
+        <div className="main-content__wrapper">
+          <Navigation backgroundColor={`${hero}`} />
 
-          <main>{this.props.children}</main>
+          <main>{children}</main>
         </div>
       </div>
     );

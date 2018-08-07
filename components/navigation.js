@@ -1,8 +1,8 @@
 import Icons from "react-fontawesome";
 import IconButton from './elements/icon-button'
 
-export default () => (
-  <header>
+export default (props) => (
+  <header className={`uk-container uk-container-large ${props.backgroundColor ? `background-color-${props.backgroundColor}` : '' }`}>
     <nav className="uk-flex uk-flex-between uk-margin-medium-top">
       <div className="uk-flex uk-flex-between uk-flex-center uk-flex-middle">
         <span className="header__contact-icon uk-margin-small-right">

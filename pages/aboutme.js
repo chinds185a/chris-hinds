@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 
 // Components
-import AboutMe from "../components/intro";
+import Hero from "../components/hero";
 
 const Container = styled.div`
   width: 100%;
@@ -10,13 +10,14 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
 `;
 
+const colorTheme = 'yellow';
+
 export default () => (
-  <Layout title="Welcome" background="true">
+  <Layout title="Welcome" hero={colorTheme}>
     <Container>
-      <AboutMe />
+      <Hero backgroundColor={colorTheme} />
     </Container>
   </Layout>
 );
