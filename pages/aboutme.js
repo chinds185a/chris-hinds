@@ -6,7 +6,7 @@ import Hero from "../components/hero";
 
 const Container = styled.div`
   width: 100%;
-  height: calc(100vh - 76px);
+  height: 100%;
   margin: 0;
   padding: 0;
 `;
