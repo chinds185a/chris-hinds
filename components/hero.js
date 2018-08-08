@@ -3,9 +3,9 @@ import Button from "../components/elements/button";
 
 export default (props) => (
   <div className={`uk-dark uk-hero ${props.backgroundColor ? `background-color-${props.backgroundColor}` : ''}`}>
-      <div>
+      <div className="uk-width-1-1 uk-width-2-3@m">
         <section>
-          <h1 className="uk-heading-hero">Chris Hinds.</h1>
+          <h1 className="uk-heading-hero">about me.</h1>
         </section>
         <section>
           <p>
