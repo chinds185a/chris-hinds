@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import styled from "styled-components";
 import Icons from "react-fontawesome";
-import {Timeline, TimelineBlip} from 'react-event-timeline';
+import {Timeline, TimelineEvent, TimelineBlip} from 'react-event-timeline';
 
 // Components
 import Hero from "../components/hero";
@@ -18,15 +18,16 @@ const colorTheme = 'yellow';
 export default () => (
   <Layout title="Welcome" hero={colorTheme}>
     <Container>
-      <Hero backgroundColor={colorTheme} />
-      <div className="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid">
+      <Hero title="about me" backgroundColor={colorTheme} />
+      <div className="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match uk-grid">
 
           <article>
             <div className="uk-card uk-card-hover uk-card-body uk-card-large">
               <h3 className="uk-card-title">Timeline</h3>
               <Timeline>
-                <TimelineBlip
+                <TimelineEvent
                   title="Software Engineer @ British Broadcasting Corporation (BBC)"
+                  subtitle="Dave to dave"
                   icon={<Icons name="book"/>}
                 />
                 <TimelineBlip
