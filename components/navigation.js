@@ -14,8 +14,8 @@ export default (props) => (
           </span>
         </div>
         <div className="uk-flex uk-flex-center uk-flex-middle">
-          <a type="button" uk-toggle="target: #offcanvas-flip">
-            <span uk-icon="icon: menu; ratio: 2"></span>
+          <a className="uk-link-heading" type="button" uk-toggle="target: #offcanvas-flip">
+            <Icons name="bars" size="2x" />
           </a>
           {/* <ul className="header__social-links uk-iconnav">
             <li>
