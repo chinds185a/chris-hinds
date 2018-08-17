@@ -11,7 +11,7 @@ function urlFor(source) {
 }
 
 // Components
-import Hero from "../components/hero";
+import HeroImage from "../components/heroImage";
 
 const Container = styled.div`
   width: 100%;
@@ -20,12 +20,12 @@ const Container = styled.div`
   padding: 0;
 `;
 
-const colorTheme = 'yellow';
+const theme = 'dark';
 
-const Post = ({ title = 'oops', authorName = 'no name', categories = [], authorImage = {}, body = [] }) => (
-  <Layout title={title} hero={colorTheme}>
+const Post = ({ title = 'oops', authorName = 'no name', categories = [], authorImage = {}, body = [], mainImage = '' }) => (
+  <Layout title={title} theme={theme}>
     <Container>
-      <Hero title={title} backgroundColor={colorTheme} />
+      <HeroImage title={title} mainImage={mainImage} />
       <div className="uk-container uk-container-medium">
         <div>
           {categories && (
@@ -38,7 +38,7 @@ const Post = ({ title = 'oops', authorName = 'no name', categories = [], authorI
           }
         </div>
         <div>
-          <span className="uk-text-meta">{authorName}</span>
+          <span className="uk-text-meta" uk-scrollspy="cls:uk-animation-fade">{authorName}</span>
           <img src={urlFor(authorImage).width(50).url()} />
         </div>
         <BlockContent
@@ -58,6 +58,7 @@ Post.getInitialProps = async ({ query: { slug } }) => {
     "authorName": author->name,
     "categories": categories[]->title,
     "authorImage": author->image,
+    "mainImage": mainImage.asset->url,
     body
   }`, { slug })
   return document
