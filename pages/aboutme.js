@@ -1,23 +1,15 @@
 import Layout from "../components/layout";
-import styled from "styled-components";
 import Icons from "react-fontawesome";
 import {Timeline, TimelineEvent, TimelineBlip} from 'react-event-timeline';
 
 // Components
 import Hero from "../components/hero";
 
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-`;
-
 const colorTheme = 'yellow';
 
 export default () => (
   <Layout title="Welcome" hero={colorTheme}>
-    <Container>
+    <div className="aboutme-content__container">
       <Hero title="about me" backgroundColor={colorTheme} />
       <div className="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match uk-grid">
 
@@ -77,6 +69,6 @@ export default () => (
             </div>
           </article>
       </div>
-    </Container>
+    </div>
   </Layout>
 );

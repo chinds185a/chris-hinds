@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import styled from "styled-components";
 
 // Sanity
 import BlockContent from '@sanity/block-content-to-react'
@@ -13,18 +12,11 @@ function urlFor(source) {
 // Components
 import HeroImage from "../components/heroImage";
 
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-`;
-
 const theme = 'dark';
 
 const Post = ({ title = 'oops', authorName = 'no name', categories = [], authorImage = {}, body = [], mainImage = '' }) => (
   <Layout title={title} theme={theme}>
-    <Container>
+    <div className="post-content__container">
       <HeroImage title={title} mainImage={mainImage} />
       <div className="uk-container uk-container-medium">
         <div>
@@ -48,7 +40,7 @@ const Post = ({ title = 'oops', authorName = 'no name', categories = [], authorI
           dataset={client.clientConfig.dataset}
         />
       </div>
-    </Container>
+    </div>
   </Layout>
 );
 
