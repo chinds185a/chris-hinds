@@ -1,0 +1,24 @@
+// Typogrophy
+.home-hero__title {
+  font-weight: 100;
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+@include respond-above(sm) {
+  .home-hero__title {
+    font-size: 2.5em;
+  }
+}
+
+@include respond-above(md) {
+  .home-hero__title {
+    font-size: 3.5em;
+  }
+}
+
+@include respond-above(lg) {
+  .home-hero__title {
+    font-size: 4.5em;
+  }
+}

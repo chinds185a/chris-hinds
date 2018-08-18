@@ -26,22 +26,12 @@ h6 {
 }
 
 .layout-wrapper.background-enabled {
-  background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.8)), url('/static/images/index_background.jpg');
+  background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.8)), url('/static/images/index_background_large.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.cta-button {
-  width: 100%;
-  margin: 0 ($margin-default*2) ($margin-default*2) 0;
-}
-
-@include respond-above(sm) {
-  .cta-button {
-      width: auto;
-  }
-}
 
 // background colours
 .background-color-yellow {
