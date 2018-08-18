@@ -1,11 +1,12 @@
 import React from "react";
-import Link from "next/link";
+import Router from 'next/router'
 import Head from "next/head";
 import Fonts from "./fonts";
 import "../scss/styles.scss";
 
 // Components
 import Navigation from './navigation.js';
+import ActiveLink from './elements/active-link.js'
 
 class Index extends React.Component {
   componentDidMount() {
@@ -22,11 +23,15 @@ class Index extends React.Component {
                 <h3>chris hinds.</h3>
 
                 <ul className="uk-nav uk-nav-primary">
-                  <li className="uk-active"><a href="/">Home</a></li>
-                  <li className=""><a href="/aboutme">About Me</a></li>
-                  <li className=""><a href="/blog/dave">Blog</a></li>
-                  
-                  <li className="uk-nav-header">Header</li>
+                  <ActiveLink href="/">
+                    Home
+                  </ActiveLink>
+                  <ActiveLink href="/aboutme">
+                    About Me
+                  </ActiveLink>
+                  <ActiveLink href="/blog/dave">
+                    Blog
+                  </ActiveLink>
               </ul>
             </div>
         </div>

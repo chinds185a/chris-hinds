@@ -32,62 +32,6 @@ h6 {
   background-position: center;
 }
 
-
-// background colours
-.background-color-yellow {
-  background-color: $palette-yellow;;
-}
-
-.background-color-blue {
-  background-color: $palette-blue;;
-}
-
-.background-color__twitter {
-  background-color: $twitter;;
-}
-
-.background-color__github {
-  background-color: $github;;
-}
-
-.background-color__linkedin {
-  background-color: $linkedin;;
-}
-
-// text colours
-.text-color__orange {
-  color: #e64313;
-}
-
-.text-color__green {
-  color: #7eb7aa;
-}
-
-// Typogrophy
-.home-hero__title {
-  font-weight: 100;
-  font-size: 2.2em;
-  text-transform: uppercase;
-}
-
-@include respond-above(sm) {
-  .home-hero__title {
-    font-size: 2.5em;
-  }
-}
-
-@include respond-above(md) {
-  .home-hero__title {
-    font-size: 3.5em;
-  }
-}
-
-@include respond-above(lg) {
-  .home-hero__title {
-    font-size: 4.5em;
-  }
-}
-
 .home-cta__container a {
   text-decoration: none;
 }
