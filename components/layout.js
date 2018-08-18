@@ -1,12 +1,11 @@
 import React from "react";
-import Router from 'next/router'
 import Head from "next/head";
 import Fonts from "./fonts";
 import "../scss/styles.scss";
 
 // Components
-import Navigation from './navigation.js';
-import ActiveLink from './elements/active-link.js'
+import Navigation from './navigation';
+import Sidebar from './sidebar';
 
 class Index extends React.Component {
   componentDidMount() {
@@ -17,24 +16,7 @@ class Index extends React.Component {
     const { title, children, background, hero, theme = 'light' } = this.props;
     return (
       <div className="uk-offcanvas-content">
-        <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true;">
-            <div className="uk-offcanvas-bar">
-                <button className="uk-offcanvas-close" type="button" uk-close="true"></button>
-                <h3>chris hinds.</h3>
-
-                <ul className="uk-nav uk-nav-primary">
-                  <ActiveLink href="/">
-                    Home
-                  </ActiveLink>
-                  <ActiveLink href="/aboutme">
-                    About Me
-                  </ActiveLink>
-                  <ActiveLink href="/blog/dave">
-                    Blog
-                  </ActiveLink>
-              </ul>
-            </div>
-        </div>
+        <Sidebar />
         <div className={`layout-wrapper ${background ? 'background-enabled' : ''}`}>
           <Head>
             <title>{title}</title>
