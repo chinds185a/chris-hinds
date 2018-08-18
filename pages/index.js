@@ -1,23 +1,12 @@
 import Layout from "../components/layout";
-import styled from "styled-components";
 import Icons from "react-fontawesome";
 
 // Components
 import AboutMe from "../components/intro";
 
-const Container = styled.div`
-  width: 100%;
-  min-height: calc(100vh - 76px);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-`;
-
 export default () => (
   <Layout title="Welcome" background="true">
-    <Container>
+    <div className="home-content__container">
       <div className="uk-flex uk-flex-1 uk-flex-middle uk-padding@s">
         <AboutMe />
       </div>
@@ -42,6 +31,6 @@ export default () => (
           </a>
         </div>
       </div>
-    </Container>
+    </div>
   </Layout>
 );

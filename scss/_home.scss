@@ -1,0 +1,13 @@
+.home-cta__container a {
+  text-decoration: none;
+}
+
+.home-content__container {
+  width: 100%;
+  min-height: calc(100vh - 76px);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
