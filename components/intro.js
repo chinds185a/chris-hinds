@@ -7,10 +7,10 @@ export default () => (
       <div>
         <section>
           <h1 className="home-hero__title">
-            Hi folks, I am.<br/>
+            Hi folks, I am<br/>
             <span className="text-color__orange">Chris Hinds.</span><br/>
             A <span className="text-color__green">fullstack developer</span> from<br/>
-            planet earth
+            planet earth. <span className="uk-text-meta">(i think...)</span>
           </h1>
         </section>
 

@@ -26,7 +26,7 @@ h6 {
 }
 
 .layout-wrapper.background-enabled {
-  background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.8)), url(https://www.cactusweb.gr/wp-content/uploads/2017/06/slide-2.jpg);
+  background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.8)), url('/static/images/index_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,4 +96,8 @@ h6 {
   .home-hero__title {
     font-size: 4.5em;
   }
+}
+
+.home-cta__container a {
+  text-decoration: none;
 }
