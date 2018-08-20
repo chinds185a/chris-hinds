@@ -12,6 +12,5 @@ export default () => (
     <div className="uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
       <Button href='/aboutme' buttonStyle='default' size='large'>Tell me more...</Button>
     </div>
-    
   </div>
 );
