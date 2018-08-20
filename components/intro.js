@@ -9,5 +9,9 @@ export default () => (
       A <span className="text-color__green">fullstack developer</span> from<br/>
       planet earth. <span className="uk-text-meta">(i think...)</span>
     </h1>
+    <div className="uk-flex uk-flex-center" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
+      <Button href='/aboutme' buttonStyle='default' size='large'>Tell me more...</Button>
+    </div>
+    
   </div>
 );

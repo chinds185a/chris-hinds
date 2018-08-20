@@ -7,7 +7,7 @@ import AboutMe from "../components/intro";
 export default () => (
   <Layout title="Welcome" background="true">
     <div className="home-content__container">
-      <div className="uk-flex uk-flex-1 uk-flex-middle uk-padding@s">
+      <div className="uk-flex uk-flex-1 uk-flex-middle uk-padding">
         <AboutMe />
       </div>
       
