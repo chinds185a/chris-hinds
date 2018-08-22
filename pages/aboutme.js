@@ -84,8 +84,11 @@ export default () => (
 
           <article>
             <div className="uk-card uk-card-hover uk-card-body uk-card-large">
-              <h3 className="uk-card-title">Interests</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <h3 className="uk-card-title">Software and Technologies</h3>
+              <p>I have worked on/developed many small and large scale projects using but not limited to; <span className="text-color__blue uk-text-bold">JavaScript, ReactJS, PHP, Ruby, ReactNative, Angular, Express></span></p>
+              <hr />
+              <p>I have a keen interest in web performance and serverless technologies. I continually looking to improve the performance of website that I work with, using tools such as lighthouse and the browser API to leverage metrics and reccomendations.</p>
+              <p>Serverless technologies have always kept me on my toes, thinking of news way's to improve existing projects and generate ideas for new projects, with the use of AWS and Googles cloud platform the technologies are right at your fingertips. (Psssst... they generally include a free tier too, so whats stopping you!)</p>
             </div>
           </article>
       </div>
