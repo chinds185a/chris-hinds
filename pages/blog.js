@@ -12,6 +12,7 @@ function imageUrlFor(source) {
 
 // Components
 import Hero from "../components/hero";
+import PostCard from "../components/post-card";
 
 const colorTheme = 'blue';
 
@@ -20,12 +21,9 @@ const Blog = ({ posts }) => (
     <div className="aboutme-content__container">
       <Hero title="the blog" backgroundColor={colorTheme} />
       
-      <div>
+      <div className="uk-child-width-1-3@m uk-child-width-1-4@l uk-grid-match uk-grid-small" uk-grid="true">
         {posts.map(post => (
-          <div>
-            <img src={imageUrlFor(post.image).ignoreImageParams().width(300)} />
-            <a href={`/post/${post.slug}`}>{post.title}</a>
-          </div>
+          <PostCard {...post} image={imageUrlFor(post.image).ignoreImageParams().width(400)} />
         ))}
       </div>
     </div>
