@@ -9,7 +9,7 @@ export default () => (
       <ul className="uk-nav uk-nav-primary">
         <ActiveLink href="/">Home</ActiveLink>
         <ActiveLink href="/aboutme">About Me</ActiveLink>
-        <ActiveLink href="/blog/dave">Blog</ActiveLink>
+        <ActiveLink href="/blog">Blog</ActiveLink>
       </ul>
     </div>
   </div>

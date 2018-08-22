@@ -13,7 +13,7 @@ class Index extends React.Component {
   }
 
   render() {
-    const { title, children, background, hero, theme = 'light' } = this.props;
+    const { title, children, background, backgroundColor, theme = 'light' } = this.props;
     return (
       <div className="uk-offcanvas-content">
         <Sidebar />
@@ -28,7 +28,7 @@ class Index extends React.Component {
           </Head>
 
           <div className="main-content__wrapper">
-            <Navigation backgroundColor={`${hero}`} theme={theme} />
+            <Navigation backgroundColor={backgroundColor} theme={theme} />
 
             <main>{children}</main>
           </div>

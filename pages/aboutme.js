@@ -9,7 +9,7 @@ const colorTheme = 'yellow';
 const iconColour = '#00a2ad';
 
 export default () => (
-  <Layout title="Welcome" hero={colorTheme}>
+  <Layout title="Welcome" backgroundColor={colorTheme}>
     <div className="aboutme-content__container">
       <Hero title="about me" backgroundColor={colorTheme} />
       <div className="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match uk-grid">
@@ -66,7 +66,7 @@ export default () => (
           <article>
             <div className="uk-card uk-card-hover uk-card-body uk-card-large">
               <h3 className="uk-card-title">What I do</h3>
-              <p>At the moment I work for BBC News, specifically the WorldService team who build and maintains the 41 BBC News Language sites, from <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener">BBC Mundo</a> to <a href="https://www.bbc.com/pidgin" target="_blank" rel="noopener">BBC Pidgin</a></p>
+              <p>I currently work for BBC News, specifically the WorldService team who build and maintains the 41 BBC News Language sites, from <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener">BBC Mundo</a> to <a href="https://www.bbc.com/pidgin" target="_blank" rel="noopener">BBC Pidgin</a></p>
               <p>Over the past two years I have been a key member of the team, helping to launch 12 new language sites around the world as well as building AMP (Accelerated Mobile Pages) for all of <a href="https://www.google.co.uk/amp/s/www.bbc.co.uk/news/amp/technology-45273087" target="_blank" rel="noopener">BBC News</a> and <a href="https://www.google.co.uk/amp/s/www.bbc.co.uk/sport/amp/football/45274881" target="_blank" rel="noopener">BBC Sport</a></p>
               <h4>What else?</h4>
               <ul>
@@ -87,8 +87,8 @@ export default () => (
               <h3 className="uk-card-title">Software and Technologies</h3>
               <p>I have worked on/developed many small and large scale projects using but not limited to; <span className="text-color__blue uk-text-bold">JavaScript, ReactJS, PHP, Ruby, ReactNative, Angular, Express></span></p>
               <hr />
-              <p>I have a keen interest in web performance and serverless technologies. I continually looking to improve the performance of website that I work with, using tools such as lighthouse and the browser API to leverage metrics and reccomendations.</p>
-              <p>Serverless technologies have always kept me on my toes, thinking of news way's to improve existing projects and generate ideas for new projects, with the use of AWS and Googles cloud platform the technologies are right at your fingertips. (Psssst... they generally include a free tier too, so whats stopping you!)</p>
+              <p>I have a keen interest in web performance and serverless technologies. I am continually looking to improve the performance of websites that I work with, using tools such as lighthouse and the browser API to leverage metrics and reccomendations.</p>
+              <p>Serverless technologies have always kept me on my toes, thinking of new way's to improve existing projects and generate ideas for new projects, with the use of AWS and Googles cloud platform the technologies are right at your fingertips. (Psssst... they generally include a free tier too, so whats stopping you!)</p>
             </div>
           </article>
       </div>
