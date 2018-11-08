@@ -1,59 +1,70 @@
-import Layout from "../components/layout";
-
 // Sanity
-import BlockContent from '@sanity/block-content-to-react'
-import imageUrlBuilder from '@sanity/image-url'
-import client from '../client'
-const builder = imageUrlBuilder(client)
+import BlockContent from "@sanity/block-content-to-react";
+import imageUrlBuilder from "@sanity/image-url";
+import client from "../client";
+const builder = imageUrlBuilder(client);
 function urlFor(source) {
-  return builder.image(source)
+  return builder.image(source);
 }
+
+// Layouts
+import Layout from "../components/layout";
+import Container from "../components/layouts/container";
 
 // Components
 import HeroImage from "../components/heroImage";
+import Tags from "../components/tags";
+import ProfileImage from "../components/profileImage";
 
-const theme = 'dark';
+const theme = "dark";
 
-const Post = ({ title = 'oops', authorName = 'no name', categories = [], authorImage = {}, body = [], mainImage = '' }) => (
+const Post = ({
+  title = "oops",
+  authorName = "no name",
+  categories = [],
+  authorImage = {},
+  body = [],
+  mainImage = ""
+}) => (
   <Layout title={title} theme={theme}>
-    <div className="post-content__container">
+    <Container size="large">
       <HeroImage title={title} mainImage={mainImage} />
-      <div className="uk-container uk-container-medium">
+      <Container size="small">
         <div>
-          {categories && (
-            <ul>Posted in
-              { categories.map(category => (
-                <li key={category}>{category}</li>
-              ))}
-            </ul>
-            )
-          }
+          <Tags categories={categories} />
         </div>
         <div>
-          <span className="uk-text-meta" uk-scrollspy="cls:uk-animation-fade">{authorName}</span>
-          <img src={urlFor(authorImage).width(50).url()} />
+          <ProfileImage
+            image={urlFor(authorImage)
+              .width(50)
+              .url()}
+            name={authorName}
+          />
         </div>
         <BlockContent
           blocks={body}
-          imageOptions={{w: 540, h: 360, fit: 'max'}}
+          imageOptions={{ w: 540, h: 360, fit: "max" }}
           projectId={client.clientConfig.projectId}
           dataset={client.clientConfig.dataset}
         />
-      </div>
-    </div>
+      </Container>
+    </Container>
   </Layout>
 );
 
 Post.getInitialProps = async ({ query: { slug } }) => {
-  const document = await client.fetch(`*[_type == "post" && slug.current == $slug][0]{
+  const document = await client.fetch(
+    `*[_type == "post" && slug.current == $slug][0]{
     title,
     "authorName": author->name,
     "categories": categories[]->title,
     "authorImage": author->image,
     "mainImage": mainImage.asset->url,
     body
-  }`, { slug })
-  return document
-}
+  }`,
+    { slug }
+  );
+  return document;
+};
 
-export default Post
+export default Post;

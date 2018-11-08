@@ -2,6 +2,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   min-height: 100vh;
+  background-color: $palette-off-white;
 }
 
 h1,
@@ -26,7 +27,8 @@ h6 {
 }
 
 .layout-wrapper.background-enabled {
-  background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.8)), url('/static/images/index_background_large.jpg');
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/static/images/index_background_large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
